@@ -23,12 +23,17 @@ select {
   padding: 0;
   font-weight: normal; }
 
+input {
+  outline: none;
+  overflow: hidden; }
+
 body {
   font: 12px "宋体", "微软雅黑", HELVETICA;
   background: #fff; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #666; }
 
 em {
   font-style: normal; }
@@ -144,34 +149,6 @@ img {
       width: 312px;
       height: 95px;
       float: right; }
-      .top .top-bom .top-bom-right form {
-        display: block;
-        margin-top: 31px;
-        height: 32px;
-        width: 204px;
-        border: 1px solid #cecece;
-        float: left;
-        background: #fff; }
-        .top .top-bom .top-bom-right form input {
-          outline: none;
-          margin: 8px 0 0 8px;
-          height: 16px;
-          width: 157px;
-          float: left;
-          border: none; }
-        .top .top-bom .top-bom-right form a {
-          height: 34px;
-          width: 38px;
-          float: right; }
-      .top .top-bom .top-bom-right #yuyue {
-        text-align: center;
-        line-height: 32px;
-        margin-top: 31px;
-        float: right;
-        width: 96px;
-        height: 32px;
-        background: #EE0000;
-        color: #FFFFFF; }
 
 .footer-bg {
   width: 100%;
@@ -261,3 +238,24 @@ img {
         padding: 13px 0 0 47px; }
         .footer-bg .footer .foot_other .foot_other_safe a img {
           display: inline-block; }
+
+.cellme {
+  display: block;
+  position: fixed;
+  height: 340px;
+  width: 67px;
+  top: 150px;
+  right: 0;
+  background: #FFC0CB; }
+  .cellme .wumen {
+    position: absolute;
+    height: 95px;
+    width: 88px;
+    display: block;
+    top: -94px;
+    right: 0;
+    background: url(../img/img.png); }
+  .cellme div {
+    height: 67px;
+    width: 67px;
+    border-top: 1px solid #F8E3DF; }

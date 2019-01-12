@@ -1,0 +1,124 @@
+.main {
+  display: block;
+  position: relative;
+  height: 601px;
+  width: 100%;
+  background: url(../img/auth_bg_new.jpg) no-repeat center top; }
+  .main .login {
+    margin: 0 auto;
+    display: block;
+    height: 600px;
+    width: 1180px; }
+    .main .login .login-right {
+      position: relative;
+      display: block;
+      width: 452px;
+      height: 510px;
+      float: right; }
+      .main .login .login-right h4 {
+        position: absolute;
+        display: block;
+        width: 80px;
+        height: 20px;
+        font-size: 20px;
+        top: 95px;
+        left: 38px; }
+      .main .login .login-right .login_zhuce {
+        width: 48px;
+        height: 14px;
+        position: absolute;
+        top: 100px;
+        right: 50px; }
+        .main .login .login-right .login_zhuce a {
+          font-size: 12px; }
+          .main .login .login-right .login_zhuce a:hover {
+            color: #f00; }
+      .main .login .login-right form {
+        position: relative;
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        margin-top: 132px;
+        background: url(../img/auth_main_login.jpg) no-repeat 20px 0; }
+        .main .login .login-right form .user,
+        .main .login .login-right form .pwd,
+        .main .login .login-right form #joinit {
+          background: #FFFFFF;
+          width: 300px;
+          height: 34px;
+          box-sizing: border-box; }
+        .main .login .login-right form .user {
+          margin: 0 auto;
+          margin-top: 10px;
+          padding: 9px 10px; }
+          .main .login .login-right form .user input {
+            border: none;
+            height: 16px;
+            line-height: 16px; }
+        .main .login .login-right form .pwd {
+          margin: 0 auto;
+          margin-top: 15px;
+          padding: 9px 10px; }
+          .main .login .login-right form .pwd input {
+            border: none;
+            height: 16px;
+            line-height: 16px; }
+        .main .login .login-right form .tishi {
+          display: block;
+          color: #f00;
+          margin: 5px auto;
+          height: 14px;
+          width: 200px;
+          display: none; }
+        .main .login .login-right form #autodelv {
+          position: absolute;
+          top: 160px;
+          left: 60px; }
+        .main .login .login-right form .autodelv {
+          position: absolute;
+          top: 160px;
+          left: 75px; }
+        .main .login .login-right form .forget {
+          position: absolute;
+          top: 160px;
+          left: 305px;
+          cursor: pointer; }
+          .main .login .login-right form .forget:hover {
+            color: #f00; }
+        .main .login .login-right form #joinit {
+          margin: 0 auto;
+          margin-top: 50px;
+          background: #ff8f8f;
+          text-align: center;
+          line-height: 34px;
+          font-size: 14px;
+          color: #FFFFFF;
+          cursor: pointer; }
+          .main .login .login-right form #joinit:hover {
+            background: rgba(255, 143, 143, 0.7); }
+        .main .login .login-right form .other_delv {
+          margin-top: 70px; }
+          .main .login .login-right form .other_delv #qq, .main .login .login-right form .other_delv #wx, .main .login .login-right form .other_delv #wb, .main .login .login-right form .other_delv #bao {
+            float: left;
+            margin-left: 30px;
+            display: block;
+            width: 46px;
+            height: 46px; }
+          .main .login .login-right form .other_delv #qq {
+            background: url(../img/qq-btn.jpg) no-repeat 0 0; }
+            .main .login .login-right form .other_delv #qq:hover {
+              background: url(../img/qq-btn.jpg) no-repeat -46px 0; }
+          .main .login .login-right form .other_delv #wx {
+            background: url(../img/weixin-btn.jpg) no-repeat 0 0; }
+            .main .login .login-right form .other_delv #wx:hover {
+              background: url(../img/weixin-btn.jpg) no-repeat -46px 0; }
+          .main .login .login-right form .other_delv #wb {
+            background: url(../img/sina-btn.jpg) no-repeat 0 0; }
+            .main .login .login-right form .other_delv #wb:hover {
+              background: url(../img/sina-btn.jpg) no-repeat -46px 0; }
+          .main .login .login-right form .other_delv #bao {
+            background: url(../img/zhifubao-btn.jpg) no-repeat 0 0; }
+            .main .login .login-right form .other_delv #bao:hover {
+              background: url(../img/zhifubao-btn.jpg) no-repeat -46px 0; }

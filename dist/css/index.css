@@ -1,3 +1,29 @@
-body {
-  margin: 0;
-  padding: 0; }
+.top form {
+  display: block;
+  margin-top: 31px;
+  height: 32px;
+  width: 204px;
+  border: 1px solid #cecece;
+  float: left;
+  background: #fff; }
+  .top form input {
+    outline: none;
+    margin: 8px 0 0 8px;
+    height: 16px;
+    width: 157px;
+    float: left;
+    border: none; }
+  .top form a {
+    height: 34px;
+    width: 38px;
+    float: right; }
+
+.top #yuyue {
+  text-align: center;
+  line-height: 32px;
+  margin-top: 31px;
+  float: right;
+  width: 96px;
+  height: 32px;
+  background: #EE0000;
+  color: #FFFFFF; }
