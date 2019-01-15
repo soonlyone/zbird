@@ -1,0 +1,155 @@
+
+.main {
+    display: block;
+    position: relative;
+    height: 601px;
+    width: 100%;
+    background: url(../img/auth_bg_new.jpg) no-repeat center top;
+    .login {
+        margin: 0 auto;
+        display: block;
+        height: 600px;
+        width: 1180px;
+        .login-right {
+            position: relative;
+            display: block;
+            width: 452px;
+            height: 510px;
+            float: right;
+            h4 {
+                position: absolute;
+                display: block;
+                width: 80px;
+                height: 20px;
+                font-size: 20px;
+                top: 95px;
+                left: 38px;
+            }
+            .login_zhuce {
+                width: 48px;
+                height: 14px;
+                position: absolute;
+                top: 100px;
+                right: 50px;
+                a {
+                    font-size: 12px;
+                    &:hover {
+                        color: #f00;
+                    }
+                }
+            }
+            form {
+                position: relative;
+                margin: 0 auto;
+                width: 400px;
+                height: 400px;
+                padding: 40px 30px;
+                box-sizing: border-box;
+                margin-top: 132px;
+                background: url(../img/auth_main_login.jpg) no-repeat 20px 0;
+                .user,
+                .pwd,
+                #joinit {
+                    background: #FFFFFF;
+                    width: 300px;
+                    height: 34px;
+                    box-sizing: border-box;
+                }
+                .user {
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    padding: 9px 10px;
+                    input {
+                        border: none;
+                        height: 16px;
+                        line-height: 16px;
+                    }
+                }
+                .pwd {
+                    margin: 0 auto;
+                    margin-top: 15px;
+                    padding: 9px 10px;
+                    input {
+                        border: none;
+                        height: 16px;
+                        line-height: 16px;
+                    }
+                }
+                .tishi{
+                    display: block;
+                    color: #f00;
+                    margin:5px auto;
+                    height: 14px;
+                    width: 200px;
+                    display: none;
+                }
+                #autodelv {
+                    position: absolute;
+                    top: 160px;
+                    left: 60px;
+                }
+                .autodelv {
+                    position: absolute;
+                    top: 160px;
+                    left: 75px;
+                }
+                .forget {
+                    position: absolute;
+                    top: 160px;
+                    left: 305px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #f00;
+                    }
+                }
+                #joinit{
+                    margin: 0 auto;
+                    margin-top: 50px;
+                    background:rgba(255,143,143,1);
+                    text-align: center;
+                    line-height: 34px;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    &:hover{
+                        background:rgba(255,143,143,0.7);
+                    }
+                }
+                .other_delv{
+                    margin-top:70px ;
+                    #qq,#wx,#wb,#bao{
+                        float: left;
+                        margin-left: 30px;
+                        display: block;
+                        width: 46px;
+                        height: 46px;
+                    }
+                    #qq{                       
+                        background: url(../img/qq-btn.jpg) no-repeat 0 0;
+                        &:hover{
+                             background: url(../img/qq-btn.jpg) no-repeat -46px 0;
+                        }
+                    }
+                    #wx{                       
+                        background: url(../img/weixin-btn.jpg) no-repeat 0 0;
+                         &:hover{
+                             background: url(../img/weixin-btn.jpg) no-repeat -46px 0;
+                        }
+                    }
+                    #wb{                       
+                       background: url(../img/sina-btn.jpg) no-repeat 0 0;
+                        &:hover{
+                             background: url(../img/sina-btn.jpg) no-repeat -46px 0;
+                        }
+                    }
+                    #bao{
+                        background: url(../img/zhifubao-btn.jpg) no-repeat 0 0;
+                         &:hover{
+                             background: url(../img/zhifubao-btn.jpg) no-repeat -46px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

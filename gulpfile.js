@@ -13,7 +13,7 @@ gulp.task('copy_html',function(){
 
 gulp.task('copy_img',function(){ 
 	return gulp.src('img/**')
-	.pipe(gulp.dest('dist'));
+	.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('sass',function(){
