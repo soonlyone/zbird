@@ -673,14 +673,14 @@
 .main_last {
     width: 1180px;
     height: 324px;
-    margin: 0 auto;
-    margin-top: 55px;
+    margin: 55px auto;
     display: block;
     .last_left {
         float: left;
         width: 660px;
         border-top: 1px solid #333;
-        height: 324px;
+        border-bottom: 1px solid #333;
+        height: 322px;
         .last_list1 {
             display: block;
             float: left;

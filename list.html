@@ -1,9 +1,570 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/alltb.css" />
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
+		<div class="top">
+			<div class="top-t-bg">
+				<div class="top-top">
+					<div class="top-top-come">
+						<h1 class="headerwelcome">欢迎进入砖石小鸟官网</h1>
+						<a class="denglv" href="logoin.html">登录</a>
+						<a class="zhuce" href="zhuce.html">注册</a>
+						<a class="mine">用户你好！</a>
+						<a class="outleave">取消登录</a>
+					</div>
+					<div class="top-top-nav">
+						<ul>
+							<li id="cart">
+								<a href="cart.html">
+									购物车
+								</a>
+								<div class="car_num">
+									0
+								</div>
+								<span class="bom_sti"></span>
+								<div id="mycart">
+
+								</div>
+							</li>
+							<li>
+								<a href="">我的订单</a>
+							</li>
+							<li id="mysth">
+								<a href="">我的鸟巢 <span class="bom_sti"></span>
+								</a>
+								<ul id="minesth">
+									<li>
+										<a href="">订单查询</a>
+									</li>
+									<li>
+										<a href="">售后服务</a>
+									</li>
+									<li>
+										<a href="">积分换礼</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="">砖石课堂</a>
+							</li>
+							<li id="phonein">
+								<a href="">手机官网</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="top-bom">
+				<h2 id="logo"><a href="index.html"></a></h2>
+				<div class="top_bominner">
+					钻石小鸟 智慧之选
+				</div>
+				<div class="top-bom-right">
+					<form action="" method="post">
+						<input type="text" placeholder="戒托" />
+						<a id="search" href="#"></a>
+					</form>
+					<a id="yuyue" href="#">预约有礼</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="main_nav">
+				<ul class="main_list">
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="">钻石</a>
+					</li>
+					<li>
+						<a href="">婚戒</a>
+					</li>
+					<li>
+						<a href="">对戒</a>
+					</li>
+					<li>
+						<a href="">配饰</a>
+					</li>
+					<li>
+						<a href="">定制</a>
+					</li>
+					<li>
+						<a href="">体检中心</a>
+					</li>
+				</ul>
+				<ul class="main_rightnav">
+					<li>
+						<a href="">商贸加盟</a>
+					</li>
+					<li>
+						<a href="">品牌故事</a>
+					</li>
+					<li>
+						<a href="">鸟巢论坛</a>
+					</li>
+				</ul>
+			</div>
+			<div class="list_00" style="display:none">
+				<div class="list_01">
+					<div class="snav_title">
+						<a href="" class="snav_title_txtimg">钻石</a>
+						<a href="" class="snav_title_txt">探索全部钻石</a>
+						<div class="snav_lst">
+							<a href="">30分裸钻</a>
+							<a href="">50分裸钻</a>
+							<a href="">70分裸钻</a>
+							<a href="">克拉钻</a>
+							<a href="">海淘钻石 立省15%</a>
+							<a href="">北极光钻石</a>
+							<a href="">FireCushion钻石</a>
+						</div>
+					</div>
+					<div class="snav_lst">
+						<a href="">圆形</a>
+						<a href="">公主方</a>
+						<a href="">祖母绿</a>
+						<a href="">橄榄形</a>
+						<a href="">椭圆形</a>
+						<a href="">梨形</a>
+						<a href="">心形</a>
+						<a href=""></a>
+					</div>
+					<div class="navline"></div>
+					<div class="snav_lst lstpoa">
+						<a href="">定制一款钻戒</a>
+						<a href="">定制一款吊坠</a>
+						<a href="">钻石4C知识</a>
+						<a href="">钻石其他参数如何查看</a>
+						<a href="">钻石证书知识</a>
+						<a href="">甄选特惠裸钻专区</a>
+						<a href="">戒指戴法</a>
+
+					</div>
+					<div class="snav_ads">
+						<a href=""><img src="  http://imu.zbird.cn/431/30/43130_1" alt="" width="611" height="262"></a>
+					</div>
+				</div>
+
+				<div class="list_01">
+					<div class="snav_title">
+						<a href="" class="snav_title_txtimg">婚戒</a>
+						<a href="" class="snav_title_txt">探索全部婚戒</a>
+						<div class="snav_lst">
+							<a href="">简约独钻</a>
+							<a href="">奢华群镶</a>
+							<a href="">克拉钻戒</a>
+							<a href="">大气男戒</a>
+							<a href="">纪念戒/花戒</a>
+							<a href="">戒托款式</a>
+							<a href="">人气热销</a>
+						</div>
+					</div>
+					<div class="snav_lst">
+						<a href="">北极光追光系列</a>
+						<a href="">北极光MY QUEEN系列</a>
+						<a href="">心心相印系列</a>
+						<a href="">LADY NEW YORK</a>
+						<a href="">公主桂冠系列</a>
+						<a href="">钟情蕾丝系列</a>
+						<a href="">宠爱系列</a>
+						<a href="">设计师甄选与经典款式</a>
+					</div>
+					<div class="navline"></div>
+					<div class="snav_lst lstpoa">
+						<a href="">如何测量手寸</a>
+						<a href="">如何挑选适合的戒指款式</a>
+						<a href="">如何选购戒托材质</a>
+						<a href="">匠心工艺</a>
+						<a href="">铂金价格</a>
+						<a href="">女生戒指的戴法图解</a>
+						<a href="">男朋友过生日送什么礼物好</a>
+
+					</div>
+					<div class="snav_ads">
+						<a href=""><img src="http://imu.zbird.cn/525/70/52570_1" alt="" width="611" height="262"></a>
+					</div>
+				</div>
+
+				<div class="list_01">
+					<div class="snav_title">
+						<a href="" class="snav_title_txtimg">对戒</a>
+						<a href="" class="snav_title_txt">探索全部对戒</a>
+						<div class="snav_lst">
+							<a href="">18K金对戒</a>
+							<a href="">铂金对戒</a>
+							<a href="">男款对戒</a>
+							<a href="">女款对戒</a>
+							<a href="">热销款式</a>
+						</div>
+					</div>
+					<div class="snav_lst">
+						<a href="">INTO COLOUR悦色系列</a>
+						<a href="">两人一世戒系列</a>
+						<a href="">YOU_ME系列</a>
+						<a href="">皇冠系列</a>
+						<a href="">Fancy Collection系列</a>
+					</div>
+					<div class="navline"></div>
+					<div class="snav_lst lstpoa">
+						<a href="">送女朋友礼物排行榜</a>
+						<a href="">送男生什么礼物好</a>
+						<a href="">金手镯</a>
+						<a href="">北极光</a>
+						<a href="">手镯应该戴在哪只手上</a>
+						<a href="">让男友感动到哭的礼物</a>
+						<a href="">女朋友过生日送什么礼物好</a>
+
+					</div>
+					<div class="snav_ads">
+						<a href=""><img src="http://imu.zbird.cn/548/06/54806_1" alt="" width="611" height="262"></a>
+					</div>
+				</div>
+
+				<div class="list_01">
+					<div class="snav_title">
+						<a href="" class="snav_title_txtimg">配饰</a>
+						<a href="" class="snav_title_txt">探索全部配饰</a>
+						<div class="snav_lst">
+							<a href="">挂坠</a>
+							<a href="">项链坠</a>
+							<a href="">耳钉</a>
+							<a href="">手链</a>
+							<a href="">手镯</a>
+							<a href="">项链</a>
+							<a href="">人气TOP</a>
+						</div>
+					</div>
+					<div class="snav_lst">
+						<a href="">YOU CAN BE</a>
+						<a href="">ANYTHING芭比系列</a>
+						<a href="">铂金瞬间永恒吊坠系列</a>
+						<a href="">生而不同星座系列</a>
+						<a href="">珍珠系列</a>
+						<a href="">BLINK系列</a>
+						<a href="">钟情蕾丝系列</a>
+						<a href="">微光系列</a>
+					</div>
+					<div class="navline"></div>
+					<div class="snav_lst lstpoa">
+						<a href="">结婚礼物</a>
+						<a href="">祖母绿</a>
+						<a href="">GIA证书</a>
+						<a href="">钻戒排名</a>
+						<a href="">浪漫婚礼</a>
+						<a href="">送女性朋友礼物排行榜</a>
+						<a href="">生日礼物买什么好</a>
+
+					</div>
+					<div class="snav_ads">
+						<a href=""><img src="http://imp.zbird.cn/542/21/54221_1" alt="" width="611" height="262"></a>
+					</div>
+				</div>
+
+				<div class="list_01">
+					<div class="snav_title">
+						<a href="" class="snav_title_txtimg">定制</a>
+						<a href="" class="snav_title_txt">探索全部定制</a>
+						<div class="snav_lst">
+							<a href="">从裸钻开始定制</a>
+							<a href="">从戒托开始定制</a>
+							<a href="">从吊坠托开始定制</a>
+							<a href="">私人定制服务</a>
+						</div>
+					</div>
+					<div class="snav_lst">
+						<a href="">经典直臂款戒托</a>
+						<a href="">简约扭臂款戒托</a>
+						<a href="">异型钻款戒托</a>
+						<a href="">北极光款戒托</a>
+						<a href="">火玫瑰款戒托</a>
+					</div>
+					<div class="navline"></div>
+					<div class="snav_lst lstpoa">
+						<a href="">钻石4C</a>
+						<a href="">戒托款式</a>
+						<a href="">戒托材质</a>
+						<a href="">手寸测量</a>
+						<a href="">男人内心想收到的礼物</a>
+						<a href="">Au750</a>
+						<a href="">送男友实用礼物排行榜</a>
+
+					</div>
+					<div class="snav_ads">
+						<a href=""><img src="http://imu.zbird.cn/548/08/54808_1" alt="" width="611" height="262"></a>
+					</div>
+				</div>
+
+				<div class="list_01">
+					<div class="snav_title">
+						<a href="" class="snav_title_txtimg">体验中心</a>
+						<a href="" class="snav_title_txt">探索全部体验中心</a>
+						<div class="snav_lst">
+							<a href="">上海体验中心</a>
+							<a href="">北京体验中心</a>
+							<a href="">广州体验中心</a>
+							<a href="">杭州体验中心</a>
+							<a href="">成都体验中心</a>
+							<a href="">宿迁体验中心</a>
+							<a href="">苏州体验中心</a>
+						</div>
+					</div>
+					<div class="snav_lst">
+						<a href="">南京体验中心</a>
+						<a href="">合肥体验中心</a>
+						<a href="">天津体验中心</a>
+						<a href="">宁波体验中心</a>
+						<a href="">盐城体验中心</a>
+						<a href="">常州体验中心</a>
+						<a href="">烟台体验中心</a>
+					</div>
+					<div class="navline"></div>
+					<div class="snav_lst lstpoa">
+						<a href="">武汉体验中心</a>
+						<a href="">西安体验中心</a>
+						<a href="">郑州体验中心</a>
+						<a href="">济宁体验中心</a>
+						<a href="">丽水体验中心</a>
+						<a href="">盐城金鹰体验中心</a>
+						<a href="">重庆大都会体验中心</a>
+						<a href="" target="_blank" style="color:#fdb2a4">查看全部</a>
+
+					</div>
+					<div class="snav_ads">
+						<a href=""><img src="http://imu.zbird.cn/416/02/41602_1" alt="" width="611" height="262"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="list_banner">
+
+		</div>
+		<div class="main">
+			<div class="lstpg_main">
+				<div class="list_left">
+					<ul>
+						<li>
+							<a href="">家用电器</a>
+						</li>
+						<li>
+							<a href="">服装</a>
+						</li>
+						<li>
+							<a href="">办公用品</a>
+						</li>
+						<li>
+							<a href="">洗衣机</a>
+						</li>
+						<li>
+							<a href="">冰箱</a>
+						</li>
+						<li>
+							<a href="">笔记本</a>
+						</li>
+						<li>
+							<a href="">外套</a>
+						</li>
+						<li>
+							<a href="">零食</a>
+						</li>
+						<li>
+							<a href="">食品</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list_right">
+					<ul class="main_pro">
+						<li>
+							<a href=""><img src="img/buy_01.jpg" /></a>
+							<span class="pro_name">盼盼 法式软面包1320g早餐食品糕点休闲零食 1320g</span>
+							<span class="pro_price">￥ 3190</span>
+							<div>"2018-08-08"</div>
+							<em>加入购物车</em>
+						</li>
+					</ul>
+					<ul id="tianzhuan">
+						<li><span id="uppage"></span></li>
+						<li id="pagechange">
+							<span class="color_red">1</span>
+							<span>2</span>
+							<span>3</span>
+							<span>4</span>
+							<span>5</span>
+						</li>
+						<li><span id="downpage"></span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bg">
+			<div class="footer">
+				<div class="foot_server">
+					<a href="#" style="width:201px"></a>
+					<a href="#" style="width:195px"></a>
+					<a href="#" style="width:227px"></a>
+					<a href="#" style="width:197px"></a>
+					<a href="#" style="width:198px"></a>
+					<a href="#" style="width:162px"></a>
+				</div>
+				<div class="foot_friend">
+					<h3></h3>
+					<div class="foot_main">
+						<ul>
+							<li>关于我们</li>
+							<li>
+								<a href="">关于我们</a>
+							</li>
+							<li>
+								<a href="">关于我们</a>
+							</li>
+							<li>
+								<a href="">关于我们</a>
+							</li>
+							<li>
+								<a href="">关于我们</a>
+							</li>
+							<li>
+								<a href="">关于我们</a>
+							</li>
+						</ul>
+						<ul>
+							<li>购物指南</li>
+							<li>
+								<a href="">购物指南</a>
+							</li>
+							<li>
+								<a href="">购物指南</a>
+							</li>
+							<li>
+								<a href="">购物指南</a>
+							</li>
+							<li>
+								<a href="">购物指南</a>
+							</li>
+
+						</ul>
+						<ul>
+							<li>支付方式</li>
+							<li>
+								<a href="">配送方式</a>
+							</li>
+							<li>
+								<a href="">配送方式</a>
+							</li>
+							<li>
+								<a href="">配送方式</a>
+							</li>
+							<li>
+								<a href="">配送方式</a>
+							</li>
+
+						</ul>
+						<ul>
+							<li>配送方式</li>
+							<li>
+								<a href="">配送方式</a>
+							</li>
+							<li>
+								<a href="">配送方式</a>
+							</li>
+							<li>
+								<a href="">配送方式</a>
+							</li>
+							<li>
+								<a href="">配送方式</a>
+							</li>
+
+						</ul>
+						<ul>
+							<li>售后服务</li>
+							<li>
+								<a href="">售后服务</a>
+							</li>
+							<li>
+								<a href="">售后服务</a>
+							</li>
+							<li>
+								<a href="">售后服务</a>
+							</li>
+							<li>
+								<a href="">售后服务</a>
+							</li>
+						</ul>
+					</div>
+					<div class="twoimg">
+						二维码
+					</div>
+				</div>
+				<div class="foot_other">
+					<div class="foot_other_top">
+						<a href="#">
+
+						</a>
+					</div>
+					<div class="foot_other_main">
+
+						<div class="conn1">
+							<a href="#">网站地址</a>
+							<span>|</span>
+							<a href="">友情链接</a>
+							<span>|</span>
+							<a href="">在线投诉</a>
+							<span>|</span>
+							<a href="">沪ICP备08011593号</a>
+							<span>|</span>
+							<a>在线投诉</a>
+						</div>
+						<div class="conn2">
+							上海溯天珠宝贸易有限公司 021-26011188
+						</div>
+					</div>
+					<div class="foot_other_safe">
+						<div class="safe_conn">
+							<a href=""><img src="../img/fot_certi.gif" /></a>
+							<a href=""><img src="../img/fot_certi_04.jpg" /></a>
+							<a href=""><img src="../img/fot_certi.gif" /></a>
+							<a href=""><img src="../img/fot_certi_04.jpg" /></a>
+							<a href=""><img src="../img/fot_certi.gif" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cellme">
+			<a class="wumen" href="#"> </a>
+			<div id="onlitalk">
+				<a href=""><img src="../img/1.gif" /></a>
+			</div>
+			<div id="my_cart">
+				<span class="car_num">
+					0
+				</span>
+				<a href="cart.html"><img src="../img/2.jpg" /></a>
+			</div>
+			<div id="yu_yue">
+				<a href=""><img src="../img/3.jpg" /></a>
+			</div>
+			<div id="my_sth">
+				<a href=""><img src="../img/4.jpg" /></a>
+			</div>
+			<div id="conn_phone">
+				<a href=""><img src="../img/5.jpg" width="67px" height="67px"></a>
+			</div>
+
+		</div>
+		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
 	</body>
+
 </html>

@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/alltb.css"/>
 		<link rel="stylesheet" type="text/css" href="css/denglv.css"/>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="top">
@@ -15,14 +16,16 @@
 		    			<h1 class="headerwelcome">欢迎进入砖石小鸟官网</h1>
 		    			<a class="denglv" href="logoin.html">登录</a>
 		    			<a class="zhuce" href="zhuce.html">注册</a>
+		    			<a class="mine">用户你好！</a>
+						<a class="outleave">取消登录</a>
 		    		</div>
 		    		<div class="top-top-nav">
 		    			<ul>
 			    			<li id="cart">
-			    				<a href="#">
+			    				<a href="cart.html">
 			    					购物车
 			    				</a>
-			    				<div id="car_num">
+			    				<div class="car_num">
 			    					0
 			    				</div>
 			    				<span class="bom_sti"></span>
@@ -47,7 +50,7 @@
 				</div>	    		
 	    	</div>
 	    	<div class="top-bom">
-	    		<h2 id="logo"><a href=""></a></h2>
+	    		<h2 id="logo"><a href="index.html"></a></h2>
 	    		<div class="top_bominner">
 	    			钻石小鸟  智慧之选
 	    		</div>
@@ -101,7 +104,10 @@
 	    		<a href=""><img src="../img/1.gif"/></a>
 	    	</div>
 	    	<div id="my_cart">
-	    		<a href=""><img src="../img/2.jpg"/></a>
+	    		<span class="car_num">
+					0
+				</span>
+	    		<a href="cart.html"><img src="../img/2.jpg"/></a>
 	    	</div>
 	    	<div id="yu_yue">
 	    		<a href=""><img src="../img/3.jpg"/></a>

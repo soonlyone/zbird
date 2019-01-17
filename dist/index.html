@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/alltb.css" />
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -16,14 +17,16 @@
 						<h1 class="headerwelcome">欢迎进入砖石小鸟官网</h1>
 						<a class="denglv" href="logoin.html">登录</a>
 						<a class="zhuce" href="zhuce.html">注册</a>
+						<a class="mine">用户你好！</a>
+						<a class="outleave">取消登录</a>
 					</div>
 					<div class="top-top-nav">
 						<ul>
 							<li id="cart">
-								<a href="#">
+								<a href="cart.html">
 									购物车
 								</a>
-								<div id="car_num">
+								<div class="car_num">
 									0
 								</div>
 								<span class="bom_sti"></span>
@@ -77,25 +80,25 @@
 			<div class="main_nav">
 				<ul class="main_list">
 					<li>
-						<a href="">首页</a>
+						<a href="index.html">首页</a>
 					</li>
 					<li>
-						<a href="">钻石</a>
+						<a href="list.html">钻石</a>
 					</li>
 					<li>
-						<a href="">婚戒</a>
+						<a href="list.html">婚戒</a>
 					</li>
 					<li>
-						<a href="">对戒</a>
+						<a href="list.html">对戒</a>
 					</li>
 					<li>
-						<a href="">配饰</a>
+						<a href="list.html">配饰</a>
 					</li>
 					<li>
-						<a href="">定制</a>
+						<a href="list.html">定制</a>
 					</li>
 					<li>
-						<a href="">体检中心</a>
+						<a href="list.html">体检中心</a>
 					</li>
 				</ul>
 				<ul class="main_rightnav">
@@ -113,16 +116,16 @@
 			<div class="list_00" style="display:none">
 				<div class="list_01">
 					<div class="snav_title">
-						<a href="" class="snav_title_txtimg">钻石</a>
-						<a href="" class="snav_title_txt">探索全部钻石</a>
+						<a href="list.html" class="snav_title_txtimg">钻石</a>
+						<a href="list.html" class="snav_title_txt">探索全部钻石</a>
 						<div class="snav_lst">
-							<a href="">30分裸钻</a>
-							<a href="">50分裸钻</a>
-							<a href="">70分裸钻</a>
-							<a href="">克拉钻</a>
-							<a href="">海淘钻石 立省15%</a>
-							<a href="">北极光钻石</a>
-							<a href="">FireCushion钻石</a>
+							<a href="list.html">30分裸钻</a>
+							<a href="list.html">50分裸钻</a>
+							<a href="list.html">70分裸钻</a>
+							<a href="list.html">克拉钻</a>
+							<a href="list.html">海淘钻石 立省15%</a>
+							<a href="list.html">北极光钻石</a>
+							<a href="list.html">FireCushion钻石</a>
 						</div>
 					</div>
 					<div class="snav_lst">
@@ -137,13 +140,13 @@
 					</div>
 					<div class="navline"></div>
 					<div class="snav_lst lstpoa">
-						<a href="">定制一款钻戒</a>
-						<a href="">定制一款吊坠</a>
-						<a href="">钻石4C知识</a>
-						<a href="">钻石其他参数如何查看</a>
-						<a href="">钻石证书知识</a>
-						<a href="">甄选特惠裸钻专区</a>
-						<a href="">戒指戴法</a>
+						<a href="list.html">定制一款钻戒</a>
+						<a href="list.html">定制一款吊坠</a>
+						<a href="list.html">钻石4C知识</a>
+						<a href="list.html">钻石其他参数如何查看</a>
+						<a href="list.html">钻石证书知识</a>
+						<a href="list.html">甄选特惠裸钻专区</a>
+						<a href="list.html">戒指戴法</a>
 
 					</div>
 					<div class="snav_ads">
@@ -156,13 +159,13 @@
 						<a href="" class="snav_title_txtimg">婚戒</a>
 						<a href="" class="snav_title_txt">探索全部婚戒</a>
 						<div class="snav_lst">
-							<a href="">简约独钻</a>
-							<a href="">奢华群镶</a>
-							<a href="">克拉钻戒</a>
-							<a href="">大气男戒</a>
-							<a href="">纪念戒/花戒</a>
-							<a href="">戒托款式</a>
-							<a href="">人气热销</a>
+							<a href="list.html">简约独钻</a>
+							<a href="list.html">奢华群镶</a>
+							<a href="list.html">克拉钻戒</a>
+							<a href="list.html">大气男戒</a>
+							<a href="list.html">纪念戒/花戒</a>
+							<a href="list.html">戒托款式</a>
+							<a href="list.html">人气热销</a>
 						</div>
 					</div>
 					<div class="snav_lst">
@@ -503,43 +506,43 @@
 				<div class="sever_list1">
 					<strong>省份</strong>
 					<em>
-  			  		<span id="310000" class=":hover">上海</span>
+  			  		<span>上海</span>
   				  			  				 
-  					<span id="440000">广东</span>
+  					<span>广东</span>
   				  			  				 
-  					<span id="330000">浙江</span>
+  					<span>浙江</span>
   				  			  				 
-  					<span id="320000">江苏</span>
+  					<span>江苏</span>
   				  			  				 
-  					<span id="510000">四川</span>
+  					<span>四川</span>
   				  			  				 
-  					<span id="610000">陕西</span>
+  					<span>陕西</span>
   				  			  				 
-  					<span id="120000">天津</span>
+  					<span>天津</span>
   				  			  				 
-  					<span id="410000">河南</span>
+  					<span>河南</span>
   				  			  				 
-  					<span id="340000">安徽</span>
+  					<span>安徽</span>
   				  			  				 
-  					<span id="110000">北京</span>
+  					<span>北京</span>
   				  			  				 
-  					<span id="420000">湖北</span>
+  					<span>湖北</span>
   				  			  				 
-  					<span id="370000">山东</span>
+  					<span>山东</span>
   				  			  				 
-  					<span id="430000">湖南</span>
+  					<span>湖南</span>
   				  			  				 
-  					<span id="130000">河北</span>
+  					<span>河北</span>
   				  			  				 
-  					<span id="140000">山西</span>
+  					<span>山西</span>
   				  			  				 
-  					<span id="620000">甘肃</span>
+  					<span>甘肃</span>
   				  			  				 
-  					<span id="350000">福建</span>
+  					<span>福建</span>
   				  			  				 
-  					<span id="530000">云南</span>
+  					<span>云南</span>
   				  			  				 
-  					<span id="500000">重庆</span>
+  					<span>重庆</span>
   				  			  			</em>
 				</div>
 				<div class="sever_list2">
@@ -755,7 +758,10 @@
 				<a href=""><img src="../img/1.gif" /></a>
 			</div>
 			<div id="my_cart">
-				<a href=""><img src="../img/2.jpg" /></a>
+				<span class="car_num">
+					0
+				</span>
+				<a href="cart.html"><img src="../img/2.jpg" /></a>
 			</div>
 			<div id="yu_yue">
 				<a href=""><img src="../img/3.jpg" /></a>

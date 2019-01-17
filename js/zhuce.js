@@ -1,4 +1,37 @@
 $(function(){
+	$(".outleave").click(function(){
+		$.removeCookie("userid");
+		$(".denglv").show();
+		$(".zhuce").show();
+		$(".mine").hide();
+		$(".outleave").hide();
+		$(".car_num").html(0);
+	})
+	
+	var toke=$.cookie("userid");
+	if(toke){
+	$.get("http://47.104.244.134:8080/cartlist.do",{"token":toke},function(data){
+		$(".car_num").html(data.length);})
+	$(".denglv").hide();
+		$(".zhuce").hide();
+		var str1="";
+		str1=toke+"  用户你好！";
+		$(".mine").html(str1).show();
+		$(".outleave").show();
+		
+	}else{
+		$(".denglv").show();
+		$(".zhuce").show();
+		$(".mine").hide();
+		$(".outleave").hide();
+	}
+	
+	var toke=$.cookie("userid");
+	if(toke){
+	$.get("http://47.104.244.134:8080/cartlist.do",{"token":toke},function(data){
+		$(".car_num").html(data.length);})
+	}
+	
 	var a,b,c,d,flag;
 	flag=0;
 
@@ -54,7 +87,9 @@ $(function(){
 			    	$("#tishi1").html("该用户已存在").show();
 			    }else{			    	
 				    $.post("http://47.104.244.134:8080/usersave.do",{"username":$("#phonenum").val(),"password":$("#pswd").val(),"email":$("#phonenum").val()+"@163.com","sex":"男"});
-	                location.assign("index.html");		   
+				    $.cookie("zz",$("#phonenum").val(),{ expires: 1 });
+				    $.cookie("mima",$("#pwd").val(),{ expires: 1 });
+	                location.assign("logoin.html");		   
 			    }
 			});
 						

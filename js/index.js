@@ -1,4 +1,29 @@
 $(function() {
+	$(".outleave").click(function(){
+		$.removeCookie("userid");
+		$(".denglv").show();
+		$(".zhuce").show();
+		$(".mine").hide();
+		$(".outleave").hide();
+		$(".car_num").html(0);
+	})
+	var toke=$.cookie("userid");
+	if(toke){
+	$.get("http://47.104.244.134:8080/cartlist.do",{"token":toke},function(data){
+		$(".car_num").html(data.length);});
+		$(".denglv").hide();
+		$(".zhuce").hide();
+		var str1="";
+		str1=toke+"  用户你好！";
+		$(".mine").html(str1).show();
+		$(".outleave").show();
+		
+	}else{
+		$(".denglv").show();
+		$(".zhuce").show();
+		$(".mine").hide();
+		$(".outleave").hide();
+	}
 	$("#cart").on("mouseover", function() {
 		$(this).css({
 			"background": "#fff"

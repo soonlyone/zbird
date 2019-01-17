@@ -18,7 +18,7 @@ fieldset,
 legend,
 input,
 textarea,
-select {
+select, i {
   margin: 0;
   padding: 0;
   font-weight: normal; }
@@ -65,7 +65,7 @@ img {
       width: 1180px;
       margin: 0 auto; }
       .top .top-t-bg .top-top .top-top-come {
-        width: 210px;
+        width: 320px;
         height: 34px;
         float: left; }
       .top .top-t-bg .top-top .headerwelcome {
@@ -76,7 +76,8 @@ img {
       .top .top-t-bg .top-top a {
         float: left;
         line-height: 34px;
-        margin-left: 12px; }
+        margin-left: 12px;
+        cursor: pointer; }
       .top .top-t-bg .top-top .top-top-nav {
         float: right; }
         .top .top-t-bg .top-top .top-top-nav #mysth {
@@ -87,7 +88,7 @@ img {
           padding: 0 10px;
           float: left;
           height: 34px; }
-          .top .top-t-bg .top-top .top-top-nav li #car_num {
+          .top .top-t-bg .top-top .top-top-nav li .car_num {
             font-size: 16px;
             margin: 0 5px;
             float: left;
@@ -255,6 +256,18 @@ img {
     top: -94px;
     right: 0;
     background: url(../img/img.png); }
+  .cellme #my_cart {
+    position: relative; }
+    .cellme #my_cart span {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      left: 30px;
+      top: 18px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      z-index: 2; }
   .cellme div {
     height: 67px;
     width: 67px;
