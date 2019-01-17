@@ -40,7 +40,7 @@ $(function(){
 	$("#joinit").click(function(){
 		$.post("http://47.104.244.134:8080/userlogin.do",{"name":$("#user").val(),"password":$("#pwd").val()},function(data){
 					if(data.code==0){
-						$.cookie("userid",data.data.token,{ expires: 7 });
+						$.cookie("userid",data.data.token,{ expires: 7 , path: '/' });
 						location.href = "index.html";						
 					}else{
 						$(".tishi").show();

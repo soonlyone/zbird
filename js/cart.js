@@ -46,7 +46,8 @@ $(function(){
 		$(".zhuce").show();
 		$(".mine").hide();
 		$(".outleave").hide();
-		alert("请登录");
+		$(".cart_bg").show();
+		$("#shopcart").hide();
 	}
 	else{
 		$(".denglv").hide();
@@ -69,7 +70,7 @@ $(function(){
 		var money=0;
 		for( var j=0;j<data.length;j++){
 			money+=data[j].goods.price*data[j].count;
-			str+=`<li data_id="${data[j].id}">
+			str+=`<li data_id="${data[j].id}" data_gid="${data[j].gid}">
 						<div class="pro_name">
 						    <a href="data.html?did=${data[j].goods.id}">
 						    <img src="${data[j].goods.picurl}"/></a>
@@ -99,10 +100,11 @@ $(function(){
 	
 	$(document).on("click",".nec",function(){
 		var getid=$(this).parent().parent().attr("data_id");
+		var getgid=$(this).parent().parent().attr("data_gid");
 		var num=$(this).parent().find("span").html();
 		var pri=$(this).parent().parent().find(".pro_pri").html();
 		if(num>0){
-			$.get("http://47.104.244.134:8080/cartupdate.do",{"id":getid,"gid":0,"num":-1,"token":toke})
+			$.get("http://47.104.244.134:8080/cartupdate.do",{"id":getid,"gid":getgid,"num":-1,"token":toke})
 			num--;
 			$(this).parent().find("span").html(num);
 			$(this).parent().parent().find(".pro_sum").html(num*pri);
@@ -114,10 +116,11 @@ $(function(){
 	
 	$(document).on("click",".dec",function(){
 		var getid=$(this).parent().parent().attr("data_id");
+		var getgid=$(this).parent().parent().attr("data_gid");
 		var num=$(this).parent().find("span").html();
 		var pri=$(this).parent().parent().find(".pro_pri").html();
 		if(num>=0){
-			$.get("http://47.104.244.134:8080/cartupdate.do",{"id":getid,"gid":0,"num":1,"token":toke})
+			$.get("http://47.104.244.134:8080/cartupdate.do",{"id":getid,"gid":getgid,"num":1,"token":toke})
 			num++;
 			$(this).parent().find("span").html(num);
             $(this).parent().parent().find(".pro_sum").html(num*pri);
@@ -128,9 +131,10 @@ $(function(){
 	})	
 	$("#shopcart ul").on("click",".opct",function(){
 		var getid=$(this).parent().attr("data_id");
+		var getgid=$(this).parent().parent().attr("data_gid");
         var linum = $(this).parent().index();
         $(".allmoney span").html($(".allmoney span").html()-$(this).parent().find(".pro_sum").html());
-        $.get("http://47.104.244.134:8080/cartupdate.do",{"id":getid,"gid":0,"num":0,"token":toke})
+        $.get("http://47.104.244.134:8080/cartupdate.do",{"id":getid,"gid":getgid,"num":0,"token":toke})
         $(this).parent().remove();
         $(".car_num").html($(".car_num").html()-1);
         var num=0;
@@ -141,7 +145,8 @@ $(function(){
 	$(".clearall").on("click",function(){
 		for(var k=0;k<$('#shopcart').find("li").length;k++){
 			var getid=$('#shopcart li').eq(k).attr("data_id");
-			$.get("http://47.104.244.134:8080/cartupdate.do",{"id":getid,"gid":0,"num":0,"token":toke})			
+			var getgid=$(this).parent().parent().attr("data_gid");
+			$.get("http://47.104.244.134:8080/cartupdate.do",{"id":getid,"gid":getgid,"num":0,"token":toke})			
 		}
 		$(".cart_bg").show();
 		$("#shopcart").hide();
